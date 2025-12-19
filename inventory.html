@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="inventory.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet"/>
+</head>
+
+<body>
+  <header>
+        <div class="nameL">
+        <img src="res/logo.png" alt="Speedy Motors Logo" class="logo">
+          <h1>SM</h1>
+          
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact us</a>
+            
+        </nav>
+    </header>
+
+
+    <h1 class="n1">Car Inventory</h1>
+    <div class="cars">
+
+        <div class="d1"
+            data-review="Elegant luxury with a smooth ride, refined interior and precise steering; ideal for comfortable long drives.">
+            <img src="res/car1.jpg" alt="Mercedes Benz">
+            <h3 class="n2">ِAston Martin</h3>
+            <p class="p5">Model <span style="color: cyan;">2023</span></p>
+            <p class="p1"> <u>Price = $ 3.500.000 </u></p>
+            <button class="review-btn">Read Review</button>
+        </div>
+
+        <div class="d2"
+            data-review="Balanced performance and comfort; great tech features and a composed ride for everyday driving.">
+            <img src="res/car2.jpg" alt="Audi">
+            <h3 class="n3">Mercedes G Class</h3>
+            <p class="p5">Model <span style="color: cyan;">2022</span></p>
+            <p class="p2"> <u>Price = $ 4.200.000 </u></p>
+            <button class="review-btn">Read Review</button>
+        </div>
+
+        <div class="d3"
+            data-review="Sporty handling and quick acceleration; suspension is firm but rewards enthusiastic drivers.">
+            <img src="res/car3.jpg" alt="BMW">
+            <h3 class="n4">Mercedes</h3>
+            <p class="p5"> Model <span style="color: cyan;">2021</span></p>
+            <p class="p3"><u>Price = $ 5.200.000</u></p>
+            <button class="review-btn">Read Review</button>
+        </div>
+
+        <div class="d4"
+            data-review="Reliable daily driver with comfortable seating and efficient fuel use; great value for the money.">
+            <img src="res/car4.jpg" alt="Mercedes Benz">
+            <h3 class="n5">BMW</h3>
+            <P class="p5">Model<span style="color: cyan;"> 2020</span> </P>
+            <p class="p4"> <u>Price = $ 2.800.000</u> </p>
+            <button class="review-btn">Read Review</button>
+        </div>
+
+
+        <div class="d5"
+            data-review="Modern design paired with a strong engine and roomy cabin; ideal for families and longer trips.">
+            <img src="res/car5.jpg" alt="BMW">
+            <h3 class="n6">Mercedes Benz</h3>
+            <p class="p5">Model <span style="color: cyan;">2024</span></p>
+            <p class="p6"> <u>Price = $ 5.500.000 </u></p>
+            <button class="review-btn">Read Review</button>
+        </div>
+
+        <div class="d6"
+            data-review="Powerful and refined; a confident cruiser with smooth highway manners and solid build quality.">
+            <img src="res/car6.jpg" alt="Mercedes Benz">
+            <h3 class="n7">BMW</h3>
+            <p class="p5">Model <span style="color: cyan;">2023</span></p>
+            <p class="p7"> <u>Price = $ 6.500.000 </u></p>
+            <button class="review-btn">Read Review</button>
+        </div>
+
+        <div class="d7"
+            data-review="Comfort-focused with advanced safety features and a plush interior; excels as a family car.">
+            <img src="res/car7.jpg" alt="Audi">
+            <h3 class="n8">Maserati</h3>
+            <p class="p5">Model <span style="color: cyan;">2023</span></p>
+            <p class="p8"> <u>Price = $ 6.500.000 </u></p>
+            <button class="review-btn">Read Review</button>
+        </div>
+
+        <div class="d8"
+            data-review="High-end performance with thrilling acceleration; exclusive, sharp handling, and head-turning looks.">
+            <img src="res/car8.jpg" alt="koenigsegg">
+            <h3 class="n9">Range rover</h3>
+            <p class="p5">Model <span style="color: cyan;">2023</span></p>
+            <p class="p9"> <u>Price = $ 7.500.000 </u></p>
+            <button class="review-btn">Read Review</button>
+        </div>
+
+    </div>
+
+    <div id="reviewModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" aria-label="Close">×</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalModel"></p>
+            <p id="modalPrice"></p>
+            <hr style="border-color: rgba(255,255,255,0.06); margin:12px 0;">
+            <p id="modalReview"></p>
+        </div>
+    </div>
+
+    <script src="inventory.js"></script>
+        
+ 
+</body>
+
+</html>
