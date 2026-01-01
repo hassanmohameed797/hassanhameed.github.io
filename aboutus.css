@@ -224,4 +224,38 @@ justify-content: center;
             color: #000;
             font-size: 14px;
             text-transform: capitalize;
+
         }
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+
+    .h1 {
+        font-size: 8vw;
+    }
+
+    .n3 {
+        font-size: 1em;
+        max-width: 100%;
+    }
+
+    .d7 {
+        width: 80px;
+        height: 80px;
+        padding: 8px;
+    }
+
+    .d7 .n4 {
+        font-size: 1.4em;
+    }
+
+    .d7 .n5 {
+        font-size: 0.9em;
+    }
+}
