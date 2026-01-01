@@ -200,7 +200,7 @@ body{
     }
 }
 
-/* Mobile screens (≤ 768px) */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -241,7 +241,6 @@ body{
     }
 }
 
-/* Small mobile screens (≤ 480px) */
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.5em;
@@ -282,4 +281,5 @@ body{
         padding: 8px 14px;
     }
 }
+
 
