@@ -181,21 +181,105 @@ body{
 
 
 @media (max-width: 900px) {
-    
     .boxes {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .b1, .b2, .b3 {
-        width: 80%; 
-        margin-bottom: 70px; 
+        width: 80%;
+        margin-bottom: 70px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        justify-content: center;
     }
 }
-.boxes .b1:hover,.b2:hover,.b3:hover {
-    transform: translateY(-10px);
-    box-shadow: 
-        0 8px 16px rgba(28, 15, 180, 0.2),
-        0 0 15px rgba(55, 14, 180, 0.6),
-        0 0 30px rgba(27, 37, 181, 0.3); 
+
+/* Mobile screens (≤ 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        height: 60px;
+        padding: 10px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+
+    .sections {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .t1 {
+        font-size: 2em;
+    }
+
+    .boxes {
+        gap: 20px;
+    }
+
+    .b1, .b2, .b3 {
+        width: 90%;
+        padding: 80px 20px 20px;
+    }
 }
+
+/* Small mobile screens (≤ 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        font-size: 0.8em;
+        padding: 5px 10px;
+    }
+
+    .t1 {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+
+    .sections p:first-of-type {
+        font-size: 0.9em;
+    }
+
+    .boxes {
+        gap: 15px;
+    }
+
+    .b1, .b2, .b3 {
+        width: 95%;
+        margin-bottom: 50px;
+        padding: 60px 15px 15px;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+
+    .call-button,
+    .whats-button,
+    .face-button {
+        font-size: 0.9em;
+        padding: 8px 14px;
+    }
+}
+
