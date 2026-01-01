@@ -177,7 +177,39 @@ body{
 .face-button:hover {
     background-color: #2d4373; 
 }
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+.b1, .b2, .b3 {
+    flex: 1;
+    min-width: 250px;
+    background-color: #262424;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 100px 30px 30px 30px;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.b1 { animation-delay: 0.2s; }
+.b2 { animation-delay: 0.4s; }
+.b3 { animation-delay: 0.6s; }
+
+.b1:hover, .b2:hover, .b3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
 
 
 @media (max-width: 900px) {
@@ -281,5 +313,6 @@ body{
         padding: 8px 14px;
     }
 }
+
 
 
